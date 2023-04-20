@@ -16,7 +16,6 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
-      title: 'Restaurant Site',
     }),
 
     new MiniCssExtractPlugin(),
@@ -28,10 +27,10 @@ const config = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', "css-loader"],
+        use: [stylesHandler, "css-loader"],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpeg|jpg|gif)$/i,
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
 
@@ -41,10 +40,11 @@ const config = {
   },
 };
 
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
+module.exports = () => {
+  if (isProduction) {
+    config.mode = "production";
+  } else {
+    config.mode = "development";
+  }
+  return config;
 };

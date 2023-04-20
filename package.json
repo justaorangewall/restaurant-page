@@ -1,11 +1,14 @@
 {
-  "name": "restaurant-page",
+  "name": "Restaurant-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Restaurant-site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
   },
   "keywords": [],
   "author": "",

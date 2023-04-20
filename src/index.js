@@ -1,6 +1,6 @@
 import _ from "lodash";
 import './index.css';
-import home, {  test } from './home';
+import home from './home';
 import contact from './contact';
 import menu from './menu';
 

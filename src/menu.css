@@ -1,0 +1,30 @@
+.menu {
+    margin:0 10%;
+    height:95%;
+    padding:0.5rem;
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size:1.5rem;
+    font-family: 'Roboto', sans-serif;
+    gap:20px;
+    
+ 
+
+}
+@media (min-width:625px) {
+    .menu {
+    grid-template-columns:  repeat(2, minmax(230px, 1fr));
+    font-size:2rem;
+    }
+}
+
+.foodCard {
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size:1.3rem;
+    text-align: center;
+}

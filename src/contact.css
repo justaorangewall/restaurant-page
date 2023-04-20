@@ -1,0 +1,25 @@
+
+.contact {
+    display:grid;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size:1.5rem;
+    font-family: 'Roboto', sans-serif;
+    gap:35px;
+    padding:0.5rem;
+
+}
+
+@media (min-width:600px) {
+    .contact {
+        display:flex;
+        justify-content: center;
+        font-size:1.5rem;
+        gap: 15px;
+    }
+}
+
+.contactInfo {
+    font-size: 1.5rem;
+}

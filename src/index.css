@@ -1,37 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 html {
-    height: 100vh;
-    width:100vw;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width:100vw;
+    margin: 0px;
+    overflow-x: hidden;
 }
-.content {
-    display: grid;
-     height: 100%; 
+body {
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    height:100%;
+    margin:0px;
+
+
+}
+#content {
+    display:flex;
+    flex-direction: column;
+     height: 100%;
      width:  100%;
+     flex:1;
 }
 
 .header {
     display:flex;
     gap:10px;
-    justify-content:space-around; 
+    justify-content:space-around;
 }
 
 .navigation-buttons {
     display:grid;
     grid-template-columns: 1fr  1fr;
-    gap: 10px;
+    gap: 5px;
 }
 
+@media (min-width:400px) {
+    .navigation-buttons {
+        display:grid;
+        grid-template-columns: 1fr  1fr;
+        gap: 30px;
+    }
+}
 .header button {
     padding:10px 10px;
     width:100px;
     white-space: nowap;
 }
 .container {
+    display:grid;
     background-color:rgb(255, 153, 0);
     height: 100%;
     width:100%;
-}
-.container .homepage {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 2;
+    flex:1;
 }

@@ -1,0 +1,37 @@
+html {
+    height: 100vh;
+    width:100vw;
+}
+.content {
+    display: grid;
+     height: 100%; 
+     width:  100%;
+}
+
+.header {
+    display:flex;
+    gap:10px;
+    justify-content:space-around; 
+}
+
+.navigation-buttons {
+    display:grid;
+    grid-template-columns: 1fr  1fr;
+    gap: 10px;
+}
+
+.header button {
+    padding:10px 10px;
+    width:100px;
+    white-space: nowap;
+}
+.container {
+    background-color:rgb(255, 153, 0);
+    height: 100%;
+    width:100%;
+}
+.container .homepage {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 2;
+}
